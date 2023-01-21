@@ -1434,6 +1434,37 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_supports_multianchor_conference" value="true"/>
     </carrier_config>
 
+    <carrier_config operator="JIO">
+        <string-array name="mccmnc" num="22">
+            <item value="405840" />
+            <item value="405854" />
+            <item value="405855" />
+            <item value="405856" />
+            <item value="405857" />
+            <item value="405858" />
+            <item value="405859" />
+            <item value="405860" />
+            <item value="405861" />
+            <item value="405862" />
+            <item value="405863" />
+            <item value="405864" />
+            <item value="405865" />
+            <item value="405866" />
+            <item value="405867" />
+            <item value="405868" />
+            <item value="405869" />
+            <item value="405870" />
+            <item value="405871" />
+            <item value="405872" />
+            <item value="405873" />
+            <item value="405874" />
+        </string-array>
+        <!-- PA: Do not allow 5G NSA on Jio -->
+        <int-array name="carrier_nr_availabilities_int_array" num="1">
+                <item value="2" />
+        </int-array>
+    </carrier_config>
+
     <carrier_config mcc="440" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
