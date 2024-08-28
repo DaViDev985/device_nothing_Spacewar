@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- The position of the volume dialog on the screen.
+         See com.android.systemui.volume.VolumeDialogImpl.
+         Value 19 corresponds to LEFT|CENTER_VERTICAL. -->
+    <integer name="volume_dialog_gravity">19</integer>
+
     <!-- Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
     <dimen name="config_rounded_mask_size">156px</dimen>
 
