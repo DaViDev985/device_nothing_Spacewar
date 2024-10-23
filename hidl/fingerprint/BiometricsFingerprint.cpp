@@ -334,11 +334,13 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
             int32_t vendorCode = 0;
             FingerprintAcquiredInfo result =
                     VendorAcquiredFilter(msg->data.acquired.acquired_info, &vendorCode);
-            ALOGD("onAcquired(%d)", result);
-            if (!thisPtr->mClientCallback->onAcquired(devId, result, vendorCode).isOk()) {
-                ALOGE("failed to invoke fingerprint onAcquired callback");
-            }
-        } break;
+                ALOGD("onAcquired(%d)", result);
+                if (result != FingerprintAcquiredInfo::ACQUIRED_VENDOR) {
+                    if (!thisPtr->mClientCallback->onAcquired(devId, result, vendorCode).isOk()) {
+                        ALOGE("failed to invoke fingerprint onAcquired callback");
+                    }
+                }
+            } break;
         case FINGERPRINT_TEMPLATE_ENROLLING:
             ALOGD("onEnrollResult(fid=%d, gid=%d, rem=%d)", msg->data.enroll.finger.fid,
                   msg->data.enroll.finger.gid, msg->data.enroll.samples_remaining);
