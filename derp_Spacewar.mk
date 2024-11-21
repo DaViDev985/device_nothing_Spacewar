@@ -27,7 +27,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := pixys_Spacewar
+PRODUCT_NAME := derp_Spacewar
 PRODUCT_DEVICE := Spacewar
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A063
@@ -40,5 +40,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
 # Override device name
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=Spacewar \
-    TARGET_PRODUCT=Spacewar
+    DeviceName=Spacewar \
+    DeviceProduct=Spacewar \
