@@ -283,7 +283,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss@2.1.vendor \
     libloc_net_iface.vendor \
-    liblocdiagiface.vendor
+    liblocdiagiface.vendor \
+    libprocessgroup.vendor
 
 # Health
 PRODUCT_PACKAGES += \
