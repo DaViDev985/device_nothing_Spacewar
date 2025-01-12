@@ -50,7 +50,6 @@ LOCAL_OVERRIDES_PACKAGES += \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
     Chrome-Stub \
-    GoogleContacts \
     PrebuiltGmail \
     Maps \
     talkback \
