@@ -443,6 +443,10 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor \
     libvndfwk_detect_jni.qti.vendor
 
+# Quick Tap
+PRODUCT_PACKAGES += \
+    ColumbusService
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
