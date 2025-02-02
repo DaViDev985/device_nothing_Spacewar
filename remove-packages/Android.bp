@@ -1,0 +1,23 @@
+android_app_import {
+    name: "RemovePackages",
+    apk: "DebloatDummy.apk",
+    presigned: true,
+    preprocessed: true,
+
+    overrides: [
+        "CalculatorGoogle",
+        "CalendarGoogle",
+        "Chrome64",
+        "Maps",
+        "Gmail2",
+        "talkback",
+        "YouTube",
+        "Drive",
+        "Accord",
+        "FossifyGallery",
+    ],
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
