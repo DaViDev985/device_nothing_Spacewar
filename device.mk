@@ -22,6 +22,9 @@ TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ICONS=true
 TARGET_NOT_USES_BLUR=true
 
+# ViPER4Android FX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
