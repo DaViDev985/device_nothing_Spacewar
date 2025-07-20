@@ -15,6 +15,9 @@ $(call inherit-product, device/nothing/Spacewar/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# temp derp16 thingy
+TARGET_DISABLE_EPPE :=true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_Spacewar
 PRODUCT_DEVICE := Spacewar
