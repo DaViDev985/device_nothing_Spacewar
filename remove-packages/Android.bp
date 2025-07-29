@@ -9,6 +9,8 @@ android_app_import {
         "CalendarGoogle",
         "Chrome64",
         "Maps",
+        "Gemini",
+        "Aperture",
         "Gmail2",
         "talkback",
         "YouTube",
