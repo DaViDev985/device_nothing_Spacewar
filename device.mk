@@ -24,7 +24,6 @@ $(call inherit-product, vendor/nothing/camera/nothing-camera.mk)
 # DerpFest Flags
 DERPFEST_BUILD_TYPE := Official
 DERP_VERSION_APPEND_TIME_OF_DAY=true
-TARGET_NOT_USES_BLUR=true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
