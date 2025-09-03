@@ -19,7 +19,7 @@ $(call inherit-product, vendor/nothing/Spacewar/Spacewar-vendor.mk)
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # NT Camera
-#$(call inherit-product, vendor/nothing/camera/nothing-camera.mk) commented out as Android 16 breaks it
+$(call inherit-product, vendor/nothing/camera/nothing-camera.mk)
 
 # DerpFest Flags
 DERPFEST_BUILD_TYPE := Official
