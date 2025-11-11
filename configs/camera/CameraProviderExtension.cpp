@@ -51,8 +51,8 @@
  }
  
  int32_t getTorchMaxStrengthLevelExt() {
-     // In our device max reports as 500, but it starts blinking violently after 255 with no change in brightness
-     return 255;
+     // In our device max reports as 500, but flashlight turns off by itself after 203
+     return 203;
  }
  
  int32_t getTorchStrengthLevelExt() {
