@@ -182,7 +182,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
-$(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -198,7 +198,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libui-v34
 
-$(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.system_ext.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries.txt
@@ -284,7 +284,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
 
 
-$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
+$(call soong_config_set_bool,stagefright,target_disable_thumbnail_block_model,true)
 
 # Native libraries whitelist
 PRODUCT_COPY_FILES += \
