@@ -104,12 +104,6 @@ vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 vendor/lib/libdirac.so
 vendor/lib/liblvacfs_wrapper.so
-vendor/lib/libhfp.so
-vendor/lib/libqtigef.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
-vendor/lib/libssrec.so
-vendor/lib/libsurround_3mic_proc.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 
