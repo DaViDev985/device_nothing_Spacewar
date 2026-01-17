@@ -5,11 +5,12 @@ android_app_import {
     preprocessed: true,
 
     overrides: [
-        "CalculatorGoogle",
-        "CalendarGoogle",
-        "Chrome64",
-        "Maps",
-        "Gemini",
+        "CalculatorGooglePrebuilt_85006267",
+        "CalendarGooglePrebuilt",
+        "Chrome-Stub",
+        "PlayAutoInstallConfig",
+        "GeminiShell_227",
+        "CredentialManagerPrebuilt_credentialmanager.android_20250404.06_p0",
         "Aperture",
         "Gmail2",
         "talkback",
